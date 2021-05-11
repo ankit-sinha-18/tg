@@ -1,24 +1,17 @@
 forwards:
-  - source: -1001102011551
-    dest: [-1001335239206]
-    offset: 45
+- dest:
+  - -1001335239206
+  end: null
+  offset: '70'
+  source: -1001102011551
+live:
+  delete_on_edit: null
+  delete_sync: false
 past:
-  delay: 3 # wait for 3s after forwarding each message
-
-show_forwarded_from: false
-
-
-
+  delay: 3.0
 plugins:
-  # specify the plugins you want to use
   filter:
     text:
-      blacklist: ["badword"]
-
-# read full documentation of plugins here https://git.io/J3NuC
-
-##########################
-
-# make sure you understand the configuration before you run
-# edit this file to suit your needs
-# read more here https://github.com/aahnik/tgcf
+      blacklist:
+      - badword
+show_forwarded_from: false
