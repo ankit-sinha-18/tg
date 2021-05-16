@@ -1,9 +1,7 @@
 name: tgcf-past
 
 on:
-  workflow_dispatch: # run when triggered manually
-  schedule:
-    - cron: "30 6 * * *" # run on the first day of every month
+  workflow_dispatch: # run on the first day of every month
     # for cron syntax see https://crontab.guru/
   
 
